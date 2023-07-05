@@ -4,11 +4,12 @@ export const metadata = {
   }
 
 import React from 'react';
+import Sidebar from '../components/Sidebar';
 
 const DashboardLayout = ({children}) => {
     return (
-        <div>
-            <h1>Sidebar</h1>
+        <div className='flex items-center'>
+            <Sidebar></Sidebar>
             {children}
         </div>
     );
